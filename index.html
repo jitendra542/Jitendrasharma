@@ -1,63 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Library</title>
-</head>
+    <title>Nature - Wikipedia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
 
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        header small {
+            font-size: 12px;
+            display: block;
+        }
+
+        header form input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        header form button {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #e9ecef;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ccc;
+            height: 100%;
+        }
+
+        nav h3 {
+            margin-top: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        nav li {
+            margin-bottom: 5px;
+        }
+
+        main {
+            margin-left: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            margin-top: 0;
+        }
+
+        u {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        figure img {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+        }
+
+        figure figcaption {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            clear: both;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ccc;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav, main {
+                width: 100%;
+                float: none;
+                margin: 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
 <body>
+
     <header>
-        <h1>Welcome To Coding Library</h1>
-        <hr>
+        <h1>Wikipedia <small>The Free Encyclopedia</small></h1>
+        <form>
+            <input type="text" placeholder="Search Wikipedia">
+            <button type="submit">Search</button>
+        </form>
     </header>
 
-    <main>
-        <h2>Web Development Topics</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>S.no.</th>
-                    <th>Topics Covered</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><br>Frontend Development
-                        <br>
+    <nav>
+        <h3>Contents</h3>
+        <ul>
+            <li>Etymology</li>
+            <li>Earth
+                <ul>
+                    <li>Geology
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
+                            <li>Geological evolution</li>
+                            <li>Historical perspective</li>
                         </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><br>Backend Development
-                        <br>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>React</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div>Check <a href="FrontendVideos.html" target="_blank">Frontend Development Videos</a></div>
-        <br>
-        <div>Check <a href="BackendVideos.html" target="_blank">Backend Development Videos</a></div>
-    </main>
-    <footer>
-        <br> <br>
-        <div>Follow Coding Library on <a href="https://www.linkedin.com/in/jitendra-kumar-sharma-5196362a7/" target="_blank"
-                rel="noopener noreferrer">Linkedin</a> for more information
-        </div>
-    </footer>
-</body>
+                    </li>
+                    <li>Atmosphere, climate, and weather</li>
+                </ul>
+            </li>
+            <li>Water on Earth
+                <ul>
+                    <li>Oceans</li>
+                    <li>Lakes</li>
+                    <li>Ponds</li>
+                    <li>Rivers</li>
+                    <li>Streams</li>
+                </ul>
+            </li>
+            <li>Ecosystems
+                <ul>
+                    <li>Wilderness</li>
+                </ul>
+            </li>
+            <li>Life
+                <ul>
+                    <li>Evolution</li>
+                    <li>Microbes</li>
+                    <li>Plants and animals</li>
+                </ul>
+            </li>
+            <li>Human interrelationship
+                <ul>
+                    <li>Human impact</li>
+                    <li>Aesthetics and beauty</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
+    <main>
+        <article>
+            <h2>Nature</h2>
+            <p><i>"Natural" redirects here. For other uses, see <u>Natural (disambiguation)</u> and <u>Nature (disambiguation)</u>.</i></p>
+            
+            <p><strong>Nature</strong> is an inherent character or constitution, particularly of the <u>ecosphere</u> or the <u>universe</u> as a whole. In this general sense nature refers to the <u>laws</u>, elements and <u>phenomena</u> of the physical world, including <u>life</u>. Although humans are part of nature, human activity or humans as a whole are often described as at times at odds, or outright separate and even superior to nature.</p>
+
+            <p>During the advent of modern <u>scientific method</u> in the last several centuries, nature became the passive <u>reality</u>, organized and moved by divine laws. With the <u>Industrial Revolution</u>, nature increasingly became seen as the part of reality deprived from intentional intervention: it was hence considered as sacred by some traditions (<u>Rousseau</u>, <u>American transcendentalism</u>) or a mere decorum for <u>divine providence</u> or human history (<u>Hegel</u>, <u>Marx</u>). However, a vitalist vision of nature, closer to the pre-Socratic one, got reborn at the same time, especially after <u>Charles Darwin</u>.</p>
+
+            <p>Within the various uses of the word today, “nature” often refers to <u>geology</u> and <u>wildlife</u>. Nature can refer to the general field of living <u>beings</u>, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. It is often taken to mean the “<u>natural environment</u>” or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially altered by human intervention, or which persist despite human intervention. For example, manufactured objects and human interaction generally are not considered part of nature, unless qualified as, for example, “human nature” or the “whole of nature”. This more traditional concept of natural things that can still be found today implies a distinction between the natural and the artificial, with the artificial being understood as that which has been brought into being by a human <u>consciousness</u> or a human <u>mind</u>. Depending on the particular context, the term “natural” might also be distinguished from the <u>unnatural</u> or the <u>supernatural</u>.</p>
+
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Star_Trails_at_Mount_Bromo.jpg/800px-Star_Trails_at_Mount_Bromo.jpg" alt="Nature Image">
+                <figcaption>A timelapse composite panorama of different natural phenomena and environments around Mount Bromo, Indonesia.</figcaption>
+            </figure>
+        </article>
+    </main>
+
+    <footer>
+        <p>Wikipedia content used under <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">CC BY-SA</a>.</p>
+    </footer>
+
+</body>
 </html>
